@@ -23,6 +23,7 @@ def predict_datapoint(): #same function name as in home.html
         return render_template('home.html')
     
     else:
+        
         data=CustomData(                       
             gender=request.form.get('gender'),
             race_ethnicity=request.form.get('ethnicity'),
